@@ -385,7 +385,7 @@ test.describe('Product Matching - Negative / Edge Cases', () => {
 
     test('TC-39 - Should handle statusId with special characters', async () => {
         // When
-        const response = await productMatchingApi.searchByText({
+        await productMatchingApi.searchByText({
             text: 'Cutting Board',
             statusId: 'test',
             // Then
