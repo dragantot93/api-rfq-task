@@ -1,0 +1,36 @@
+{
+    "name": "playwright-automation-tests",
+    "version": "1.0.0",
+    "description": "Automated end-to-end and API tests for product matching using Playwright and TypeScript",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "npx playwright test",
+        "test:headed": "npx playwright test --headed",
+        "test:report": "npx playwright show-report",
+        "test:debug": "npx playwright test --debug",
+        "build": "tsc",
+        "format": "npx prettier --config prettierrc.json --write './**/*.{ts,js,json,md}'"
+    },
+    "keywords": [
+        "playwright",
+        "typescript",
+        "automation",
+        "e2e",
+        "api-testing",
+        "qa"
+    ],
+    "author": "Your Name <your.email@example.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "@playwright/test": "^1.57.0",
+        "@types/dotenv": "^6.1.1",
+        "@types/node": "^24.10.1",
+        "typescript": "^5.9.3",
+        "eslint": "^8.50.0",
+        "prettier": "^3.0.0"
+    },
+    "dependencies": {
+        "dotenv": "^17.2.3"
+    }
+}
