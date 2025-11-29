@@ -1,0 +1,38 @@
+[
+    {
+        "id": "TC-1",
+        "description": "cutting board product from text search",
+        "type": "text",
+        "input": "Choice 24\" x 18\" x 1/2\" Green Polyethylene Cutting Board",
+        "productTerms": ["cutting board", "polyethylene", "green"],
+        "expectedProductMatches": 1,
+        "minPercentage": 40
+    },
+    {
+        "id": "TC-2",
+        "description": "food storage container from text search",
+        "type": "text",
+        "input": "Choice 4 Qt. White Square Polypropylene Food Storage Container and Green Lid - 6/Pack",
+        "productTerms": ["container", "storage", "polypropylene", "4 qt"],
+        "expectedProductMatches": 1,
+        "minPercentage": 40
+    },
+    {
+        "id": "TC-3",
+        "description": "cutting board product from URL search",
+        "type": "url",
+        "input": "https://www.webstaurantstore.com/choice-24-x-18-x-1-2-green-polyethylene-cutting-board/40724185GN.html",
+        "productTerms": ["cutting board", "polyethylene", "green"],
+        "expectedProductMatches": 1,
+        "minPercentage": 40
+    },
+    {
+        "id": "TC-4",
+        "description": "food storage container from URL search",
+        "type": "url",
+        "input": "https://www.webstaurantstore.com/choice-4-qt-white-square-polypropylene-food-storage-container-and-green-lid-pack/176SQWH4KT6.html",
+        "productTerms": ["container", "storage", "polypropylene", "4 qt"],
+        "expectedProductMatches": 1,
+        "minPercentage": 40
+    }
+]
