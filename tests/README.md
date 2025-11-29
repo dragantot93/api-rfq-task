@@ -2,7 +2,7 @@
 
 ## What I Used
 
-I built this test suite with Playwright and TypeScript. Playwright is great for both UI and API testing, so I didn't need to bring in extra libraries. TypeScript gives me better autocomplete and helps catch bugs before running tests.
+I built this test suite with Playwright and TypeScript. Playwright is great for API testing, so I didn't need to bring in extra libraries. TypeScript gives me better autocomplete and helps catch bugs before running tests.
 
 I'm also using dotenv for managing API keys and config stuff, plus Prettier and ESLint to keep the code clean.
 
@@ -11,16 +11,17 @@ I'm also using dotenv for managing API keys and config stuff, plus Prettier and 
 You'll need Node.js installed (version 16 or newer should work fine).
 
 # Install everything
-Go into tests folder
+Go into tests folder and write next commands in CLI
 
 npm install
 
-# Download the browsers Playwright needs
 npx playwright install
 
 You will need .env file in tests folder so make sure to create one and create API_KEY variable with value of your API key
 
 example - API_KEY=ApiKey you-can-do-it-too
+
+Without it your tests will not work.
 
 ## Running the Tests
 Make sure you are in tests folder.
